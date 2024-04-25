@@ -6,6 +6,7 @@ Este proyecto es un repositorio digital diseñado para almacenar información ed
 
 ## Dependencias/Tecnologias
 - Nodejs
+- JS
 - Handlebars
 - Postgresql
 - express-handlebars: "5.2.0"
