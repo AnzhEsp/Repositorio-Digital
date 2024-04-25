@@ -1,0 +1,57 @@
+
+
+
+  <div class="contenedor__registrar">
+                <div class="contenedor__titulo">
+                    <p>Nuevo usuario</p>
+                </div>
+
+                <div class="contenedor__datos">
+                    <div class="contenedor__banner">
+                        <h2>Regístrate</h2>
+                    </div>
+
+                    <form id="form__registro" action="/registrar/usuario" method="post">
+                        <div class="sub-contenedor-1">
+                            <div class="box-input">
+                                <label for="nombre">Nombre (s)</label>
+                                <input type="text" name="nombre">
+                            </div>
+
+                            <div class="box-input">
+                                <label for="">Apellido paterno</label>
+                                <input type="text" name="apellidoPaterno">
+                            </div>
+
+                            <div class="box-input">
+                                <label for="">Apellido materno</label>
+                                <input type="text" name="apellidoMaterno">
+                            </div>
+
+                            <div class="box-input">
+                                <label for="">Correo Electrónico</label>
+                                <input type="email" name="correo" pattern="[0-9]{8}@cuautla.tecnm.mx">
+                            </div>
+                        </div>
+                        <div class="sub-contenedor-2">
+
+                            <div class="box-input">
+                                <label for="">Teléfono</label>
+                                <input type="text" name="telefono">
+                            </div>
+
+                            <div class="box-input">
+                                <label for="">Contraseña</label>
+                                <input type="password" name="pass">
+                            </div>
+                            <div class="box-input">
+                                <label for="">Repetir Contraseña</label>
+                                <input type="password" name="passrepite">
+                            </div>
+                        </div>
+                        <div class="btn-registrar">
+                    <button id="registrar-nuevo">Crear nueva cuenta</button>
+                </div>
+                </form>
+                
+            </div>

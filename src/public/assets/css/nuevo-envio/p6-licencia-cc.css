@@ -1,0 +1,46 @@
+#permiso-yes,
+#permiso-no,
+#changes-allow,
+#changes-deny,
+#changes-share-alike {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.permisos {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px;
+  font-size: 1.1em;
+}
+
+.opciones {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#conceder-licencia-1 {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#licencia-cc {
+  cursor: pointer;
+}
+
+.licencia-1 {
+  font-size: 1.2em;
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}

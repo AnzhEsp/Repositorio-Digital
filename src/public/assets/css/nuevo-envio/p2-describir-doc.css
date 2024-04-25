@@ -1,0 +1,8 @@
+.info-desc{
+    margin-bottom: 30px;
+}
+
+.regresar, .guardar-salir, .siguiente{
+    width: 33%;
+    display: flex;
+}

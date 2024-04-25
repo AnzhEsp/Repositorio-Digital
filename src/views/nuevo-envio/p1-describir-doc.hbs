@@ -1,0 +1,392 @@
+<link
+  rel="stylesheet"
+  href="\assets\css\nuevo-envio\nuevo-envio-general-style.css"
+/>
+
+<div class="container-envio-1">
+
+  <div class="titulo">
+    <p>Nuevo envío</p>
+  </div>
+
+  <div class="pasos">
+    <div class="steps">
+      <div class="paso num-select">
+        <h1>1</h1>
+      </div>
+      <a class="paso-select">Describir pt1</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>2</h1>
+      </div>
+      <a>Describir pt2</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>3</h1>
+      </div>
+      <a>Acceder</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>4</h1>
+      </div>
+      <a>Subir</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>5</h1>
+      </div>
+      <a>Revisar</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>6</h1>
+      </div>
+      <a>Licencia CC</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>7</h1>
+      </div>
+      <a>Licencia</a>
+    </div>
+
+  </div>
+
+  <div class="describir-envio">
+    <div class="titulo-box">
+      <h2>Describir ítem parte 1</h2>
+    </div>
+    <div class="desc-env autores">
+      <h3>Autor(es)</h3>
+      <div class="datos-1">
+        <div class="datos">
+          <label>Nombre (s)</label>
+          <input class="input_desc" type="text" name="nombre" id="nombre_aut" />
+        </div>
+
+        <div class="datos segundo-div">
+          <label>Apellido Paterno</label>
+
+          <div class="input-svg">
+            <input
+              class="input_desc"
+              type="text"
+              name="apellido_paterno"
+              id="apellidos_aut"
+            />
+
+          </div>
+          {{!-- }}}}}}}}}}}}}}}}} --}}
+          <label>Apellido Materno</label>
+          <div class="input-svg">
+            <input
+              class="input_desc"
+              type="text"
+              name="apellido_materno"
+              id="apellidos_aut"
+            />
+
+            <div class="btn agregar-autor">
+              <svg
+                class="img-svg-1 img-agregar-autor"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  id="add-1"
+                  x="0.5"
+                  y="0.5"
+                  width="31"
+                  height="31"
+                  rx="3.5"
+                  fill="#1AAC54"
+                ></rect>
+                <path
+                  d="M25.3327 17.3333H17.3327V25.3333H14.666V17.3333H6.66602V14.6666H14.666V6.66663H17.3327V14.6666H25.3327V17.3333Z"
+                  fill="#141927"
+                ></path>
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="31"
+                  height="31"
+                  rx="3.5"
+                  stroke="#141927"
+                ></rect>
+              </svg>
+            </div>
+          </div>
+
+          <div class="autores-añadidos container-anadidos">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="desc-env titulo-envio">
+      <h3>Título</h3>
+      <div class="datos-1">
+        <div class="datos">
+          <label>Ingresa el título principal</label>
+          <input
+            class="input_desc"
+            type="text"
+            id="titulo-prin"
+            name="titulo_principal"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="desc-env fecha-emision">
+      <h3>Fecha de emisión</h3>
+      <div class="datos-1">
+        <div class="datos fecha">
+          <label>Día</label>
+          <input class="input_desc" type="text" id="dia-emision" name="dia" />
+        </div>
+        <div class="datos fecha">
+          <label>Mes</label>
+          <select id="mes" name="mes" class="input_desc">
+            <option value="01" selected>Enero</option>
+            <option value="02">Febrero</option>
+            <option value="03">Marzo</option>
+            <option value="04">Abril</option>
+            <option value="05">Mayo</option>
+            <option value="06">Junio</option>
+            <option value="07">Julio</option>
+            <option value="08">Agosto</option>
+            <option value="09">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+          </select>
+        </div>
+        <div class="datos fecha">
+          <label>Año</label>
+          <input class="input_desc" type="text" id="anio-emision" name="anio" />
+        </div>
+      </div>
+    </div>
+
+    <div class="desc-env editor-citacion">
+      <div class="datos-1">
+        <div class="datos">
+          <h3> Editor </h3>
+          <input class="input_desc" type="text" id="editor" name="editor" />
+          <a class="info-adicional">Ingrese el nombre del editor de la instancia
+            emitida anteriormente de este artículo.</a>
+        </div>
+        <div class="datos">
+          <h3> Citación </h3>
+          <input class="input_desc" type="text" id="citacion" name="citacion" />
+          <a class="info-adicional">Ingrese la cita estándar para la instancia
+            emitida anteriormente de este artículo.</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="desc-env series">
+      <h3>Serie(s) y número de reporte</h3>
+      <div class="info-adicional-2 info-text">
+        <article>
+          Ingrese la serie y el número asignado a este artículo por su
+          comunidad.
+        </article>
+      </div>
+      <div class="datos-1">
+        <div class="datos">
+          <label for="">Nombre de la serie</label>
+          <input
+            type="text"
+            class="input_desc"
+            id="serie"
+            name="nombre_serie"
+          />
+        </div>
+        <div class="datos">
+          <label for="">Número del informe</label>
+          <input
+            type="text"
+            class="input_desc"
+            id="nombro_informe"
+            name="numero_informe"
+          />
+        </div>
+
+      </div>
+    </div>
+
+    <div class="desc-env identificadores">
+      <h3>Identificador(es)</h3>
+      <div class="info-adicional-2 info-text">
+        <article>Si el artículo tiene algún número de identificación o código
+          asociado, ingrese los tipos y los números o códigos reales.</article>
+      </div>
+      <div class="datos-1">
+        <div class="datos">
+          <select
+            type="text"
+            class="input_desc"
+            id="select"
+            name="identificador_codigo"
+          >
+            <option value="issn" selected>ISSN</option>
+            <option value="isbn">ISBN</option>
+            <option value="uri">URI</option>
+          </select>
+        </div>
+
+        <div class="datos identificadores-1">
+          <div class="input-svg">
+            <div class="input-button">
+              <input
+                type="text"
+                placeholder="543267892010"
+                class="input_desc"
+                name="identificador_numeros"
+              />
+            </div>
+
+            <div class="btn agregar-tipo-identif">
+              <svg
+                class="img-svg-1 btn-agregar-identif"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  id="add-1"
+                  x="0.5"
+                  y="0.5"
+                  width="31"
+                  height="31"
+                  rx="3.5"
+                  fill="#1AAC54"
+                ></rect>
+                <path
+                  d="M25.3327 17.3333H17.3327V25.3333H14.666V17.3333H6.66602V14.6666H14.666V6.66663H17.3327V14.6666H25.3327V17.3333Z"
+                  fill="#141927"
+                ></path>
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="31"
+                  height="31"
+                  rx="3.5"
+                  stroke="#141927"
+                ></rect>
+              </svg>
+            </div>
+          </div>
+          <div class="identif-tipos_anadidos">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="desc-env">
+      <div class="titulos">
+        <div class="titulo1">
+          <h3>Tipo(s)</h3>
+        </div>
+        <div class="titulo2">
+          <h3>Lenguaje</h3>
+        </div>
+      </div>
+
+      <div class="datos-1">
+        <div class="datos">
+          <article>Seleccione el (los) tipo(s) de contenido del artículo.</article>
+          <div class="input__select__btn">
+            <select
+              name="tipo_documento"
+              id=""
+              class="input_desc select-reporte"
+            >
+              <option value="Reporte técnico" selected>Reporte técnico</option>
+              <option value="Reporte de investigación">Reporte de investigación</option>
+              <option value="Tesis">Tesis</option>
+              <option value="Proyecto de residencias">Proyecto de residencias</option>
+            </select>
+            {{! <div class="btn agregar-tipo-reporte">
+              <svg
+                class="img-svg-1"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  id="add-1"
+                  x="0.5"
+                  y="0.5"
+                  width="31"
+                  height="31"
+                  rx="3.5"
+                  fill="#1AAC54"
+                ></rect>
+                <path
+                  d="M25.3327 17.3333H17.3327V25.3333H14.666V17.3333H6.66602V14.6666H14.666V6.66663H17.3327V14.6666H25.3327V17.3333Z"
+                  fill="#141927"
+                ></path>
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="31"
+                  height="31"
+                  rx="3.5"
+                  stroke="#141927"
+                ></rect>
+              </svg>
+            </div> }}
+          </div>
+          
+        </div>
+
+        <div class="datos">
+          <div class="lenguaje">
+            <div class="info-adicional-2 info-text-2">
+              <article>
+                Seleccione el idioma del contenido principal del artículo. Si el
+                idioma no aparece en la lista, seleccione 'Otro'. Si el
+                contenido realmente no tiene unidioma (por ejemplo, si es un
+                conjunto de datos o una imagen), seleccione 'N/A'.
+              </article>
+            </div>
+            <select name="idioma" id="idiomas" class="input_desc">
+              <option value="ES" selected>Español</option>
+              <option value="EN">Inglés</option>
+              <option value="KR">Coreano</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btns">
+    <div class="btn btn-pg1">
+      <button id="save-exit"> GUARDAR Y SALIR </button>
+    </div>
+    <div class="btn btn-pg1">
+      <button id="next">
+        SIGUIENTE
+      </button>
+    </div>
+  </div>
+
+</div>

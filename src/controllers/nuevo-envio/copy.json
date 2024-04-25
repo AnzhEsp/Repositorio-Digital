@@ -1,0 +1,27 @@
+{
+  "titulo_principal": "Gestión administrativa de los municipios del Estado de Morelos fundamentada en el control interno.",
+  "dia": "17",
+  "mes": "08",
+  "anio": "2022",
+  "editor": "Monica Acosta Miranda",
+  "citacion": "Citación",
+  "nombre_serie": "TSS",
+  "numero_informe": "123456",
+  "tipo_documento": "Tesis",
+  "idioma": "ES",
+  "autores": [
+    {
+      "nombre": "Teresa",
+      "apellido_paterno": "Reyes",
+      "apellido_materno": "Zepeda"
+    }
+  ],
+  "identificadores": [
+    { "identificador_codigo": "issn", "identificador_numeros": "1234567" }
+  ],
+  "resumen": "El objetivo de este trabajo es generar una Guía que permita a las autoridades\nresponsables conocer los procesos, la normatividad relacionada con el control\ninterno y los beneficios de convertirse en una administración conocedora de sus\ncompromisos con resultados en beneficio de la ciudadanía.",
+  "citacion_p2": "Esta herramienta proporciona múltiples beneficios al promover un ambiente de\nrespeto basado en la integridad que genera, al interior, una atmósfera pacífica para\ntrabajar y, al exterior, la confianza de la sociedad.",
+  "palabras_clave": ["Gestión", "Administración"],
+  "fecha_embargo": { "dia": "31", "mes": "12", "anio": "2099" },
+  "subir": []
+}

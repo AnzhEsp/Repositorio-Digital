@@ -1,0 +1,67 @@
+.datos-recopilados-1, 
+.datos-recopilados-2, 
+.datos-recopilados-3,
+.datos-recopilados-4{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #dededf;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* .datos-recopilados-1{
+    height: 500px;
+}
+
+
+.datos-recopilados-2{
+    height: 380px;
+} */
+
+
+.linea{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.subtitulos{
+    color: #837c40;
+    margin-bottom: 10px;
+}
+
+.contenido-item{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#edit-p1, #edit-p2, #edit-access, #edit-loaded-files{
+    width: 35%;
+    height: 70px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: var(--SCV_500);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .revisar-archivo{
+        font-size: .9em;        
+    }
+
+    .contenido-item{
+        width: 95%;
+    }
+
+    #edit-p1, #edit-p2, #edit-access, #edit-loaded-files{
+        width: 90%;
+        cursor: pointer;
+    }
+
+    /* .editar-p1, .editar-p2, .editar-acceso, .editar-archivos-subidos{
+        cursor: pointer;
+    } */
+
+
+}

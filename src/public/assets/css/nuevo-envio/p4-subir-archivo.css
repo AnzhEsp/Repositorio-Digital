@@ -1,0 +1,103 @@
+.select-file {
+  width: 90%;
+  height: 70px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.aviso-emb {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.agregar-archivos,
+.eliminar-archivos {
+  width: 100%;
+  height: 150px;
+}
+
+#add-files,
+#delete-files {
+  width: 50%;
+  height: 80px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  background-color: var(--SCV_500);
+  cursor: pointer;
+}
+
+.especificaciones {
+  width: 100%;
+  color: white;
+  margin-top: 30px;
+  /* border: 1px solid rgb(0, 0, 0); */
+  display: flex;
+  justify-content: space-between;
+}
+
+.especificaciones-contenedores {
+  width: 16%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-agregar {
+  display: flex;
+  justify-content: center;
+  margin: 13px;
+}
+.titulo-esp {
+  /* border: 1px solid rgb(0, 0, 0); */
+  background-color: var(--PCV_500);
+}
+
+.especificaciones-2 {
+  width: 100%;
+  color: white;
+  margin-top: 10px;
+  /* border: 1px solid rgb(0, 0, 0); */
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-espec {
+  background-color: #a4b0c3;
+}
+
+#archivo_primario {
+  width: 23px;
+  height: 23px;
+}
+
+@media (max-width: 768px) {
+  .select-file {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .select-file label {
+    width: 60%;
+  }
+
+  #add-files,
+  #delete-files {
+    width: 100%;
+    height: 60px;
+  }
+
+  .especificaciones-global {
+    width: 284px;
+    overflow-x: scroll;
+    font-size: 0.8em;
+  }
+
+  .cuadrilla {
+    width: 650px;
+  }
+}

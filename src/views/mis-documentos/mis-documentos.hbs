@@ -1,0 +1,136 @@
+<div class="contenedor-envios">
+  <div class="titulo">
+    <p>Mis documentos</p>
+  </div>
+  <div class="banner-agregar info-text-0">
+    <article>
+      <button class="button-modal">
+        ¿Deseas agregar un nuevo envío? Haz click aquí.
+      </button>
+    </article>
+  </div>
+  <div class="nuevo__envio-modal">
+    <div class="container__modal">
+      <div class="container-info">
+        <section class="header">
+          <div>
+            <h2>Nuevo articulo</h2>
+            <h2 class="model-close">X</h2>
+          </div>
+        </section>
+        <section class="body">
+          <article>
+            <h2>Crear un nuevo articulo en</h2>
+          </article>
+          <article class="container-search">
+            {{#if comunidades}}
+              <select name="select" class="comunidades">
+                <option selected>Elige aquí</option>
+                {{#each comunidades}}
+                  <option
+                    value="{{nombre}}"
+                    data-id="{{id_comunidad}}"
+                  >{{nombre}}</option>
+                {{/each}}
+              </select>
+            {{else}}
+              <h4>No hay comunidades</h4>
+            {{/if}}
+            <h2>Escoge la colección</h2>
+            <select name="select" class="coleccion">
+              <option value="s/n">Colecciones</option>
+
+            </select>
+            <article class="container__btn">
+              <button class="btn-comenzar">Comenzar</button>
+            </article>
+          </article>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="box-envios-no-terminados">
+                    <div class="titulo-box">
+                        <h2>Envíos no terminados</h2>
+                    </div>
+                    <div class="banner-info info-text-0">
+                        <article>
+                            Estos son los envíos parciales de ítems que no han sido completados.
+                        </article>
+                    </div>
+
+                    <div class="datos-envios-no-terminados">
+
+                        <div class="titulos-envios-no-terminados">
+                            <label for="">Título</label>
+                            <label for="">Colección</label>
+                            <label for="">Remitente</label>
+                        </div>
+
+                        <div class="contenido-no-compl-1">
+                            <div class="select-title">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Esto es un título</label>
+                            </div>
+                            <div class="colection">
+                                <label for="">Industrial</label>
+                            </div>
+                            <div class="remitente">
+                                <label for="">gnrhaven@gmail.com</label>
+                            </div>
+                        </div>
+
+                        <div class="contenido-no-compl-1">
+                            <div class="select-title">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Esto es un título</label>
+                            </div>
+                            <div class="colection">
+                                <label for="">Industrial</label>
+                            </div>
+                            <div class="remitente">
+                                <label for="">gnrhaven@gmail.com</label>
+                            </div>
+                        </div>
+                        <div class="contenido-no-compl-1">
+                            <div class="select-title">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Esto es un título</label>
+                            </div>
+                            <div class="colection">
+                                <label for="">Industrial</label>
+                            </div>
+                            <div class="remitente">
+                                <label for="">gnrhaven@gmail.com</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn quitar-envios-incomplet">
+                        <button id="btn-remove-incomplete-submissions">ELIMINAR ENVÍOS SELECCIONADOS</button>
+                    </div>
+                </div>
+
+  <div class="box-envios-terminados">
+    <div class="titulo-box">
+      <h2>Envíos terminados</h2>
+    </div>
+    <div class="banner-info info-text-0">
+      <article>
+        Estos son sus envíos aceptados en el Repositorio Digital Institucional
+      </article>
+    </div>
+
+    <div class="datos-envios-terminados">
+
+      <div class="titulos">
+        <p for="">Título</p>
+        <p for="">Colección</p>
+        <p for="">Fecha de aceptación</p>
+      </div>
+
+     {{templateDocumentos documentos}}
+
+    </div>
+  </div>
+</div>

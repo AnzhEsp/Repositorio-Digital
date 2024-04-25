@@ -1,0 +1,18 @@
+<div class="container__main">
+  <section class="container__form">
+    <article>
+      <form action="/recuperacion-cuenta/correo-enviado" method="post">
+        <h1>Recuperación de cuenta</h1>
+        <p>
+          Escribe la dirección de correo electrónico asociado a tu cuenta
+        </p>
+        <label for="">Dirección de correo electronico</label>
+        <input type="email" name="correo" id="" />
+        {{#if mensaje}}
+          <span>{{./mensaje}}</span>
+        {{/if}}
+        <input type="submit" value="Continuar" />
+      </form>
+    </article>
+  </section>
+</div>

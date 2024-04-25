@@ -1,0 +1,92 @@
+<div class="container-img">
+  <!-- <img src="/assets/iniciar-sesion-hero-b.jpg" alt="">     -->
+</div>
+
+<div class="container-form">
+  <h1>Hola.</h1>
+  <h1>¡Bienvenido de nuevo!</h1>
+  <h3>Ingrese sus datos de acceso para colaborar en el repositorio.</h3>
+  <div class="iniciar-sesion">
+    <form action="/login/auth" method="POST">
+      <div class="correo">
+        <label for="">Correo electrónico</label>
+        <div class="container-email">
+          <svg
+            class="mesage"
+            width="26.67"
+            height="21.33"
+            viewBox="0 0 20 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z"
+              fill="#A1A3A9"
+              ;
+            ></path>
+          </svg>
+          <input
+            type="email"
+            name="correo"
+            placeholder="17680169@cuautla.tecnm.mx"
+            autofocus
+          />
+        </div>
+
+      </div>
+
+      <div class="contraseña">
+        <label for="">Contraseña</label>
+        <div class="container-pass">
+          <!-- Lock -->
+          <svg
+            id="lock-1"
+            class="lock"
+            width="33"
+            height="32"
+            viewBox="0 0 33 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M24.5002 10.6668H23.1668V8.00016C23.1668 4.32016 20.1802 1.3335 16.5002 1.3335C12.8202 1.3335 9.8335 4.32016 9.8335 8.00016V10.6668H8.50016C7.0335 10.6668 5.8335 11.8668 5.8335 13.3335V26.6668C5.8335 28.1335 7.0335 29.3335 8.50016 29.3335H24.5002C25.9668 29.3335 27.1668 28.1335 27.1668 26.6668V13.3335C27.1668 11.8668 25.9668 10.6668 24.5002 10.6668ZM16.5002 22.6668C15.0335 22.6668 13.8335 21.4668 13.8335 20.0002C13.8335 18.5335 15.0335 17.3335 16.5002 17.3335C17.9668 17.3335 19.1668 18.5335 19.1668 20.0002C19.1668 21.4668 17.9668 22.6668 16.5002 22.6668ZM20.6335 10.6668H12.3668V8.00016C12.3668 5.72016 14.2202 3.86683 16.5002 3.86683C18.7802 3.86683 20.6335 5.72016 20.6335 8.00016V10.6668Z"
+              fill="#A1A3A9"
+            ></path>
+          </svg>
+          <input type="password" name="pass" placeholder="contraseña" />
+          <!-- Eye -->
+          <svg
+            id="eye-1"
+            class="eye cursor"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.5 4.5C7.5 4.5 3.23 7.61 1.5 12C3.23 16.39 7.5 19.5 12.5 19.5C17.5 19.5 21.77 16.39 23.5 12C21.77 7.61 17.5 4.5 12.5 4.5ZM12.5 17C9.74 17 7.5 14.76 7.5 12C7.5 9.24 9.74 7 12.5 7C15.26 7 17.5 9.24 17.5 12C17.5 14.76 15.26 17 12.5 17ZM12.5 9C10.84 9 9.5 10.34 9.5 12C9.5 13.66 10.84 15 12.5 15C14.16 15 15.5 13.66 15.5 12C15.5 10.34 14.16 9 12.5 9Z"
+              fill="#A1A3A9"
+            ></path>
+          </svg>
+        </div>
+        {{! Mensajes de errores }}
+        {{#if errors}}
+          <p>{{this.errors}}</p>
+        {{/if}}
+      </div>
+      <input type="submit" id="loggear" class="btn-loggear" value="Ingresar" />
+    </form>
+  </div>
+  <a href="/recuperacion-cuenta">
+    <h4 class="password-forgetting">
+      ¿Olvidó contraseña? Haga click aquí
+    </h4>
+  </a>
+  <a href="/registrar">
+    <h4 class="nuevo-usuario">
+      Registrate
+    </h4>
+  </a>
+
+</div>

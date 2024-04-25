@@ -1,0 +1,40 @@
+<div class="banner">
+  <img src="/assets/img/hero.png" alt="" class="banner__img" />
+  <p class="banner__text">
+    ¡Esta a una búsqueda de encontrar la información que necesita!
+  </p>
+</div>
+<div class="comunidades__opciones">
+  <div class="comunidades__principal">
+    <p class="comunidades__title">Comunidades</p>
+    <p class="comunidades__subtitle">
+      Elija una comunidad para vizualizar sus colecciones
+    </p>
+    <div class="comunidades__lista__index">
+      {{#each comunidades}}
+      {{#compararCadenas nombre 'Contador Público'}}
+      <div class="contenedor__comunidades comunidades-contadorP">
+        <img class="img-logo" src="/assets/img/{{../nombre}}.svg" alt="logo">
+        <a href="/comunidades/{{../id_comunidad}}">
+          <p>{{../nombre}}</p>
+        </a>
+      </div>
+      {{else}}
+        <div class="contenedor__comunidades">
+        <img class="img-logo" src="/assets/img/{{../nombre}}.svg" alt="logo">
+        <a href="/comunidades/{{../id_comunidad}}">
+          <p>{{../nombre}}</p>
+        </a>
+      </div>
+      {{/compararCadenas}}
+      {{/each}}
+
+    </div>
+  </div>
+
+  <div class="busquedas__ordenadas">
+    <p class="busq">Otras búsquedas relacionadas</p>
+    
+    {{HomeBusquedasRelacionadas documentos colecciones autores}}
+  </div>
+</div>

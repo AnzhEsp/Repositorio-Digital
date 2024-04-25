@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {{!-- ESTILOS GENERALES --}}
+  <link rel="stylesheet" href="/assets/css/general/general-styles.css">
+
+  {{!-- estilos de nav --}}
+  <link rel="stylesheet" href="/assets/css/nav/nav-bar.css">
+  <link rel="stylesheet" href="/assets/css/{{style}}">
+  {{!-- estilos de footer --}}
+  <link rel="stylesheet" href="/assets/css/footer/footer-style.css">
+  <title>
+    {{#if title}}
+{{title}}
+    {{else}}
+    Repositorio Digital Institucional
+    {{/if}}
+  </title>
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+</head>
+
+<body>
+
+  <div class="container1">
+    <header>
+      <nav class="nav">
+        <div class="nav__container">
+          <a href="/" class="nav__logo">Repositorio Digital Institucional</a>
+          <label for="menu" class="nav__label">
+            <img src="\assets\img\bx-menu.svg" class="nav__img">
+          </label>
+          <input type="checkbox" id="menu" class="nav__input">
+          <div class="nav__menu">
+            <div class="container_search">
+              <input class="search_space" type="search">
+              <svg class="search_icon" width="25" height="25" viewBox="0 0 47 47" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M33.3333 29.3333H31.2267L30.48 28.6133C33.0933 25.5733 34.6667 21.6267 34.6667 17.3333C34.6667 7.76 26.9067 0 17.3333 0C7.76 0 0 7.76 0 17.3333C0 26.9067 7.76 34.6667 17.3333 34.6667C21.6267 34.6667 25.5733 33.0933 28.6133 30.48L29.3333 31.2267V33.3333L42.6667 46.64L46.64 42.6667L33.3333 29.3333ZM17.3333 29.3333C10.6933 29.3333 5.33333 23.9733 5.33333 17.3333C5.33333 10.6933 10.6933 5.33333 17.3333 5.33333C23.9733 5.33333 29.3333 10.6933 29.3333 17.3333C29.3333 23.9733 23.9733 29.3333 17.3333 29.3333Z"
+                  fill="#F9F9F9" />
+              </svg>
+            </div>
+            <div class="container-listar">
+              <h4 href="#" class="item__listar nav__item">Listar</h4>
+              <div class="container__submenu_listar" hidden>
+                <li class='menu_despegable_perfil'>
+                  <ul><a class="nav__item_menu" href="/comunidades">Comunidades</a> </ul>
+                  <ul><a class="nav__item_menu" href="./fechas-public.html">Fechas de publicación</a></ul>
+                  <ul><a class="nav__item_menu" href="./autores.html">Autor</a></ul>
+                  <ul><a class="nav__item_menu" href="./autores.html">Titulo</a></ul>
+                  <ul><a class="nav__item_menu" href="./autores.html">Materia</a></ul>
+                </li>
+              </div>
+            </div>
+
+            <a href="/ayuda" class="nav__item container__ayuda">Ayuda</a>
+            <div class="container-perfil">
+              {{templateMenuUser user.nombre}}
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+
+
+    <footer>{{> footer}}</footer>
+  </div>
+  {{!-- MENU DEL NAVBAR--}}
+  {{!-- <script src="/assets/js/{{scriptMenu}}"></script> --}}
+  {{!-- SCRIPT DEL ARCHIVO PARA SU RESPECTIVO FUNCIONAMIENTO--}}
+  {{#if scriptEspecifico}}
+  {{!-- SCRIPT DE SWEETALERT --}}
+  {{/if}}
+  {{!-- Funcionamiento del menu listar y menu usuario --}}
+  <script src="/assets/js/menu.js"></script>
+  {{!-- Libreria de alertas externa --}}
+  <script src="/assets/js/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/easypdf-io/dist/easypdf-io.min.js"></script>
+  <script type="module" src="/assets/js/{{scriptEspecifico}}"></script>
+
+</body>
+
+</html>

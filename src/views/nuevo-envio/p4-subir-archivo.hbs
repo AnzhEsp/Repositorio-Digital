@@ -1,0 +1,161 @@
+<link
+  rel="stylesheet"
+  href="\assets\css\nuevo-envio\nuevo-envio-general-style.css"
+/>
+<div class="container-envio-2">
+
+  <div class="titulo">
+    <p>Nuevo envío</p>
+  </div>
+
+  <div class="pasos">
+    <div class="steps">
+      <div class="paso paso-terminado">
+        <h1>1</h1>
+      </div>
+      <a>Describir pt1</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso paso-terminado">
+        <h1>2</h1>
+      </div>
+      <a>Describir pt2</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso paso-terminado">
+        <h1>3</h1>
+      </div>
+      <a>Acceder</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso num-select">
+        <h1>4</h1>
+      </div>
+      <a class="paso-select">Subir</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>5</h1>
+      </div>
+      <a>Revisar</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>6</h1>
+      </div>
+      <a>Licencia</a>
+    </div>
+
+  </div>
+
+  <div class="describir-envio">
+    <div class="titulo-box">
+      <h2>Subir archivo(s)</h2>
+    </div>
+    <div class="desc-env subir-archivo">
+      <div class="datos-1">
+        <div class="datos">
+          <h3>Archivo</h3>
+          <div class="select-file">
+            <input
+              type="file"
+              class="input_desc"
+              name="file"
+              id="file"
+              accept=".pdf"
+            />
+          </div>
+        </div>
+        <div class="datos">
+          <h3>Descripción del archivo</h3>
+          <input
+            type="text"
+            class="input_desc input_name"
+            id="desc-fichero"
+            name="describir_archivo"
+            placeholder="Ejemplo: artículo principal"
+          />
+          <p>Opcionalmente, describa brevemente el fichero.</p>
+        </div>
+      </div>
+
+      <div class="datos-1">
+        <div class="datos">
+          <h3>Motivo de embargo</h3>
+          <textarea
+            name="motivo_embargo"
+            id="text_motivo"
+            class="area-texto"
+            cols="40"
+            rows="10"
+          ></textarea>
+          <a class="aviso-emb">La razón del embargo, para uso interno
+            normalmente.
+            <br />
+            Opcional.
+          </a>
+        </div>
+      </div>
+      <div class="btn-agregar">
+        <button id="delete-files" class="btn-agregar_archivo">Agregar Archivo</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="describir-envio">
+    <div class="titulo-box">
+      <h2>Subir archivo(s)</h2>
+    </div>
+    <div class="desc-env especificaciones-archivo">
+      <div class="especificaciones-global">
+        <div class="datos-1 cuadrilla">
+          <div class="especificaciones">
+            <div class="especificaciones-contenedores titulo-esp">
+              <h3>Primario</h3>
+            </div>
+            <div class="especificaciones-contenedores titulo-esp">
+              <h3>Archivo</h3>
+            </div>
+            <div class="especificaciones-contenedores titulo-esp">
+              <h3>Tamaño</h3>
+            </div>
+            <div class="especificaciones-contenedores titulo-esp">
+              <h3>Descripción</h3>
+            </div>
+            <div class="especificaciones-contenedores titulo-esp">
+              <h3>Formato</h3>
+            </div>
+            <div class="especificaciones-contenedores titulo-esp"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="datos-1">
+        <div class="btn eliminar-archivos">
+          <button id="delete-files">
+            ELIMINAR ARCHIVOS SELECCIONADOS
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btns">
+    <div class="btn regresar">
+      <button id="back">REGRESAR</button>
+    </div>
+
+    <div class="btn guardar-salir">
+      <button id="save-exit">GUARDAR Y SALIR</button>
+    </div>
+
+    <div class="btn siguiente">
+      <button id="next">SIGUIENTE</button>
+    </div>
+  </div>
+</div>

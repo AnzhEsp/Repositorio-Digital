@@ -1,0 +1,141 @@
+.container {
+  width: auto;
+  height: 100vh;
+}
+
+nav {
+  width: auto;
+  height: 6.375rem;
+  background-color: var(--PCV_500);
+  display: flex;
+}
+
+.titulo {
+  margin-left: 10px;
+}
+
+.navcontainer2,
+.navcontainer1 {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.navcontainer2 {
+  justify-content: space-around;
+}
+
+.img-source {
+  height: 30px;
+}
+
+main {
+  min-height: 55%;
+  display: flex;
+}
+
+.container-img {
+  background-image: url("/assets/img/iniciar-sesion-hero-b.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  width: 60%;
+  height: auto;
+}
+
+.container-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.container-form h1 {
+  font-family: var(--font_headlines);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--PCV_500);
+}
+
+.container-form h3 {
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.iniciar-sesion {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+}
+.iniciar-sesion > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.correo,
+.contraseña {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-pass,
+.container-email {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.container-pass,
+.container-email {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  gap: 5px;
+}
+.container-email input {
+  flex-grow: 1;
+}
+.btn-loggear {
+  width: 120px;
+  height: 30px;
+  background-color: var(--PCV_500);
+  color: #f9f9f9;
+  margin-top: 10px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+.password-forgetting,
+.nuevo-usuario {
+  color: #1b396a;
+  font-size: 1.3em;
+  font-family: var(--font_headlines);
+  color: var(--PCV_500);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 80px;
+  line-height: 46px;
+  letter-spacing: 0.25px;
+}
+
+.nuevo-usuario:hover,
+.password-forgetting:hover {
+  color: var(--green);
+}
+.nuevo-usuario:active,
+.password-forgetting:active {
+  font-size: 1.2em;
+}

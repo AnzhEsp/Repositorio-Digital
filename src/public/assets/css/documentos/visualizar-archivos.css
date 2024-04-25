@@ -1,0 +1,136 @@
+.contenedor__visualizar {
+    font-size: 1.1em;
+}
+
+.contenedor__titulo {
+    height: 120px;
+    width: 280px;
+    background-color: var(--PCV_500);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.contenedor__banner {
+    width: 25%;
+    height: 15%;
+    background-color: var(--SCV_500);
+    border-radius: 10px;
+    margin-top: -3px;
+    margin-left: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.contenedor__datos {
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: black;
+    width: 80%;
+    height: 750px;
+    margin-bottom: 30px;
+}
+
+.cantidad-archivos {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: #1550AF;
+    color: var(--WHCV_500);
+    font-size: 1.3em;
+}
+
+.cuerpo-visualizar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.regresar-archivo, .adelantar-archivo{
+    width: 5%;
+}
+
+.miniatura-archivo{
+    width: 60%;
+}
+.miniatura-archivo {
+    position: relative;
+}
+.miniatura-archivo:hover .fondo{
+    display: flex;
+}
+.fondo{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+     background: rgba(255, 255, 255, .3);
+ -webkit-backdrop-filter: blur(5px);
+ backdrop-filter: blur(0.2px);
+}
+.fondo > figcaption{
+    font-size: 28px;
+    cursor: pointer;
+}
+.fondo > figcaption > a{
+    text-decoration: none;
+    color: black;
+}
+.datos-archivo{
+    width: 37%;
+}
+
+.adelantar-archivo, .regresar-archivo, .miniatura-archivo, .datos-archivo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.datos-archivo-2{
+    width: 90%;
+    height: auto;
+    word-wrap: break-word;
+}
+.desc{
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .contenedor__banner {
+        width: 50%;
+    }
+
+    .contenedor__datos {
+        height: 700px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+}

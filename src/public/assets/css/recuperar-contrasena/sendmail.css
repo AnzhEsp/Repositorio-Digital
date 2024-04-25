@@ -1,0 +1,20 @@
+.container__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  margin-top: 20px;
+}
+
+.container-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: var(--font_body);
+  box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.container-msg > p{
+  margin: 10px;
+}

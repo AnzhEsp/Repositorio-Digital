@@ -1,0 +1,160 @@
+<link
+  rel="stylesheet"
+  href="\assets\css\nuevo-envio\nuevo-envio-general-style.css"
+/>
+<div class="container-envio-2">
+
+  <div class="titulo">
+    <p>Nuevo envío</p>
+  </div>
+
+  <div class="pasos">
+    <div class="steps">
+      <div class="paso paso-terminado">
+        <h1>1</h1>
+      </div>
+      <a>Describir pt1</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso num-select">
+        <h1>2</h1>
+      </div>
+      <a class="paso-select">Describir pt2</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>3</h1>
+      </div>
+      <a>Acceder</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>4</h1>
+      </div>
+      <a>Subir</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>5</h1>
+      </div>
+      <a>Revisar</a>
+    </div>
+
+    <div class="steps">
+      <div class="paso">
+        <h1>6</h1>
+      </div>
+      <a>Licencia</a>
+    </div>
+  </div>
+
+  <div class="describir-envio">
+    <div class="titulo-box">
+      <h2>Describir ítem parte 2</h2>
+    </div>
+    <div class="desc-env palab-clave">
+      <h3>Palabras clave relacionadas</h3>
+      <div class="datos-1">
+        <div class="datos">
+          <article>
+            Seleccione el (los) tipo(s) de contenido del artículo.
+          </article>
+          <div class="input__select__btn select-key-word">
+            <input
+              name="palabra_clave"
+              id="palabras-clave"
+              class="input_desc input__clave text"
+              autofocus
+            />
+
+            <div class="btn agregar-tipo-reporte">
+              <svg
+                class="img-svg-1"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  id="add-1"
+                  x="0.5"
+                  y="0.5"
+                  width="31"
+                  height="31"
+                  rx="3.5"
+                  fill="#1AAC54"
+                ></rect>
+                <path
+                  d="M25.3327 17.3333H17.3327V25.3333H14.666V17.3333H6.66602V14.6666H14.666V6.66663H17.3327V14.6666H25.3327V17.3333Z"
+                  fill="#141927"
+                ></path>
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="31"
+                  height="31"
+                  rx="3.5"
+                  stroke="#141927"
+                ></rect>
+              </svg>
+            </div>
+          </div>
+          <div class="palabras-clave-anadidas"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="desc-env resumen-patroci">
+      <div class="datos-1">
+        <div class="datos">
+          <h3>Resumen</h3>
+          <textarea
+            id="resumen"
+            class="area-texto text-resumen"
+            cols="50"
+            rows="10"
+            name="resumen"
+          ></textarea>
+          <a class="info-adicional">Ingrese el resumen del artículo.</a>
+        </div>
+
+        <div class="datos">
+          <h3>Citación</h3>
+          <textarea
+            id="citación"
+            class="area-texto text-citacion"
+            cols="50"
+            rows="10"
+            name="citacion_p2"
+          ></textarea>
+          <a class="info-adicional">Ingrese los nombres de los patrocinadores y
+            / o códigos de financiación en el cuadro.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btns">
+
+    <div class="btn regresar">
+      <button id="back">
+        REGRESAR
+      </button>
+    </div>
+
+    <div class="btn guardar-salir">
+      <button id="save-exit"> GUARDAR Y SALIR </button>
+    </div>
+
+    <div class="btn siguiente">
+      <button id="next">
+        {{! <a class="btn-next" href="/nuevo-envio/acceder">SIGUIENTE</a> }}
+        SIGUIENTE
+      </button>
+    </div>
+  </div>
+
+</div>

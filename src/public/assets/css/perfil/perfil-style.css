@@ -1,0 +1,275 @@
+.contenedor-perfil {
+    font-size: 1.1em;
+}
+
+.titulo p {
+    color: white;
+    font-size: 2em;
+}
+
+.titulo {
+    height: 120px;
+    width: 280px;
+    background-color: var(--PCV_500);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* Sección de identidad */
+
+.box-identidad {
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: black;
+    width: 80%;
+    height: 430px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.box-identidad-1,
+.box-identidad-2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.box-identidad-1 {
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+form {
+    display: flex;
+    height: 70%;
+}
+
+.titulo-box {
+    width: 25%;
+    height: 15%;
+    background-color: var(--SCV_500);
+    border-radius: 10px;
+    margin-top: -3px;
+    margin-left: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-identidad input,
+.box-identidad select,
+.cambiar-password input {
+    border: 1px solid rgb(192, 191, 191);
+    border-radius: 5px;
+    padding: 7px;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.box-identidad select {
+    margin-top: 10px;
+    background: none;
+}
+
+
+.box-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-cambiar-datos, .btn-cambiar-contraseña, .btn-quitar-suscripcion {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#cambiar__datos, #cambiar__pass, #quitar__susb {
+    border: 1px solid var(--SCV_500);
+    border-radius: 5px;
+    background-color: var(--SCV_500);
+    width: 30%;
+    height: 50px;
+    margin-right: 30px;
+}
+
+/* Sección de suscripciones */
+
+.box-suscripciones {
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: black;
+    width: 80%;
+    height: 480px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.box-text {
+    width: 70%;
+    height: 25%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    background: #1550AF;
+    color: var(--WHCV_500);
+}
+
+.suscripcion-label {
+    margin-top: 30px;
+    margin-left: 160px;
+}
+
+.box-suscripciones select {
+    border: 1px solid rgb(192, 191, 191);
+    border-radius: 5px;
+    padding: 7px;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.box-suscripciones-select {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-suscripciones-colecciones {
+    margin-top: 20px;
+}
+
+.colecciones-opciones {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+button {
+    background: none;
+    font-size: 1.2rem;
+}
+
+/* Sección de cambio de contraseña */
+
+.cambiar-password {
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: black;
+    width: 80%;
+    height: 550px;
+    margin-bottom: 30px;
+}
+
+.contraseña {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.container-pass input {
+    border: none;
+    flex-grow: 1;
+}
+
+#eye-1 {
+    margin-right: 10px;
+}
+
+.container-pass {
+    border: 1px solid rgb(192, 191, 191);
+    border-radius: 5px;
+    padding: 6px;
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .titulo-box {
+        width: 50%;
+        height: 80px;
+        font-size: 1rem;
+        display: flex;
+        justify-content: end justify;
+        align-items: center;
+    }
+
+    .box-identidad {
+        height: auto;
+    }
+
+    form {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .box-identidad-1 input,
+    .box-identidad-2 input, .box-identidad select {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .box-identidad-1,
+    .box-identidad-2 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .box-text {
+        height: 40%;
+        font-size: 1.1rem;
+    }
+
+    .btn-cambiar-datos, .btn-cambiar-contraseña, .btn-quitar-suscripcion {
+        margin-right: 10%;
+        margin-top: 10px;
+    }
+
+    #cambiar__datos, #cambiar__pass, #quitar__susb {
+        width: 50%;
+    }
+
+    .suscripcion-label {
+        margin-left: 50px;
+    }
+
+    .box-suscripciones {
+        height: 620px;
+    }
+
+    .contraseña{
+        width: 70%;
+    }
+    .cambiar-password {
+        height: 680px;
+    }
+
+    .cambiar-password input {
+        width: 100%;
+    }
+
+}
+
+/* @media (max-width: 576px) {
+    .sub-contenedor {
+        width: 90%;
+    }
+} */
